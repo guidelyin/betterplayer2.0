@@ -482,8 +482,8 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
   }
 
   void _showMaterialBottomSheet(List<Widget> children) {
-    SizedBox();
-    /*showModalBottomSheet<void>(
+    
+    showModalBottomSheet<void>(
       backgroundColor: Colors.white,
       context: context,
       useRootNavigator:
@@ -509,7 +509,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
           ),
         );
       },
-    );*/
+    );
   }
 
   ///Builds directionality widget which wraps child widget and forces left to
