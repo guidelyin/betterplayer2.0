@@ -416,13 +416,22 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
         child: Row(
           children: [
             SizedBox(width: isSelected ? 8 : 16),
-            Visibility(
+            /*Visibility(
                 visible: isSelected,
                 child: Icon(
                   Icons.check_outlined,
                   color:
                       betterPlayerControlsConfiguration.overflowModalTextColor,
                 )),
+                */
+
+                Visibility(
+                visible: isSelected,
+                child: Icon(
+                  Icons.check_outlined,
+                  color:Colors.which,
+                )),
+                
             const SizedBox(width: 16),
             Text(
               audioTrack.label!,
@@ -522,7 +531,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
 
   ///Builds directionality widget which wraps child widget and forces left to
   ///right directionality.
-  Widget buildLTRDirectionality(Widget child) {
+  Widget buildLTRDirectionality(Widge tchild) {
     return Directionality(textDirection: TextDirection.ltr, child: child);
   }
 
