@@ -469,7 +469,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
 
   void _showCupertinoModalBottomSheet(List<Widget> children) {
     showCupertinoModalPopup<void>(
-      barrierColor: Colors.transparent,
+     // barrierColor: Colors.transparent,
       context: context,
       useRootNavigator:
           betterPlayerController?.betterPlayerConfiguration.useRootNavigator ??
@@ -514,7 +514,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
               decoration: BoxDecoration(
-                color: betterPlayerControlsConfiguration.overflowModalColor,
+                color: Colors.black,
                 borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(24.0),
                     topRight: Radius.circular(24.0)),
