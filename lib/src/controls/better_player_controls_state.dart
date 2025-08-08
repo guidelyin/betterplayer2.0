@@ -434,13 +434,21 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
     );
   }
 
-  TextStyle _getOverflowMenuElementTextStyle(bool isSelected) {
+  /* TextStyle _getOverflowMenuElementTextStyle(bool isSelected) {
     return TextStyle(
       fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
       color: isSelected
           ? betterPlayerControlsConfiguration.overflowModalTextColor
           : betterPlayerControlsConfiguration.overflowModalTextColor
               .withOpacity(0.7),
+    );
+  }
+  */
+
+ TextStyle _getOverflowMenuElementTextStyle(bool isSelected) {
+    return TextStyle(
+      fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+      color: Colors.white,
     );
   }
 
