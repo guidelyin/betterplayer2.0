@@ -126,7 +126,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
             const SizedBox(width: 8),
             Icon(
               icon,
-              color: betterPlayerControlsConfiguration.overflowMenuIconsColor,
+              color:Colors.white,
             ),
             const SizedBox(width: 16),
             Text(
