@@ -247,8 +247,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
                 visible: isSelected,
                 child: Icon(
                   Icons.check_outlined,
-                  color:
-                      betterPlayerControlsConfiguration.overflowModalTextColor,
+                  color:Colors.white,
                 )),
             const SizedBox(width: 16),
             Text(
@@ -256,7 +255,8 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
                   ? betterPlayerController!.translations.generalNone
                   : subtitlesSource.name ??
                       betterPlayerController!.translations.generalDefault,
-              style: _getOverflowMenuElementTextStyle(isSelected),
+              style: _getOverflowMenuElementTextStyle
+              (isSelected),
             ),
           ],
         ),
@@ -431,7 +431,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
                   Icons.check_outlined,
                   color:Colors.which,
                 )),
-                
+
             const SizedBox(width: 16),
             Text(
               audioTrack.label!,
@@ -501,7 +501,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
   void _showMaterialBottomSheet(List<Widget> children) {
     
     showModalBottomSheet<void>(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       context: context,
       useRootNavigator:
           betterPlayerController?.betterPlayerConfiguration.useRootNavigator ??
