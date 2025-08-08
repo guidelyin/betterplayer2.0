@@ -170,8 +170,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
                 visible: isSelected,
                 child: Icon(
                   Icons.check_outlined,
-                  color:
-                      betterPlayerControlsConfiguration.overflowModalTextColor,
+                  color:Colors.white,
                 )),
             const SizedBox(width: 16),
             Text(
@@ -331,7 +330,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
                 child: Icon(
                   Icons.check_outlined,
                   color:
-                      betterPlayerControlsConfiguration.overflowModalTextColor,
+                      Colors.white,
                 )),
             const SizedBox(width: 16),
             Text(
@@ -362,7 +361,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
                 child: Icon(
                   Icons.check_outlined,
                   color:
-                      betterPlayerControlsConfiguration.overflowModalTextColor,
+                      Colors.white,
                 )),
             const SizedBox(width: 16),
             Text(
