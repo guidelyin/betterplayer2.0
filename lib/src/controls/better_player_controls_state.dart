@@ -429,7 +429,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
                 visible: isSelected,
                 child: Icon(
                   Icons.check_outlined,
-                  color:Colors.which,
+                  color:Colors.white,
                 )),
 
             const SizedBox(width: 16),
@@ -531,7 +531,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
 
   ///Builds directionality widget which wraps child widget and forces left to
   ///right directionality.
-  Widget buildLTRDirectionality(Widge tchild) {
+  Widget buildLTRDirectionality(Widge child) {
     return Directionality(textDirection: TextDirection.ltr, child: child);
   }
 
